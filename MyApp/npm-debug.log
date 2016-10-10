@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'cypto',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose install initial load of z:\HM7\MyApp\package.json
+5 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\body-parser\package.json
+6 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\cookie-parser\package.json
+7 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\debug\package.json
+8 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\ejs\package.json
+9 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\express\package.json
+10 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\less-middleware\package.json
+11 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\mongodb\package.json
+12 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\morgan\package.json
+13 verbose installManyTop reading scoped package data from z:\HM7\MyApp\node_modules\serve-favicon\package.json
+14 info package.json less-middleware@1.0.4 No license field.
+15 info package.json mongodb@2.2.10 No README data
+16 verbose readDependencies loading dependencies from z:\HM7\MyApp\package.json
+17 silly cache add args [ 'cypto', null ]
+18 verbose cache add spec cypto
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'cypto',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'cypto',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: 'latest',
+19 silly cache add   type: 'tag' }
+20 silly addNamed cypto@latest
+21 verbose addNamed "latest" is being treated as a dist-tag for cypto
+22 info addNameTag [ 'cypto', 'latest' ]
+23 silly mapToRegistry name cypto
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'cypto',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'cypto',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/cypto
+28 verbose addNameTag registry:https://registry.npmjs.org/cypto not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/cypto
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 1:42:37 PM
+32 verbose request id cae0871ae4aaed91
+33 http request GET https://registry.npmjs.org/cypto
+34 http 404 https://registry.npmjs.org/cypto
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=0',
+35 verbose headers   'content-length': '2',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Mon, 10 Oct 2016 18:41:55 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '0',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-ord1741-ORD',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1476124915.625934,VS0,VE89',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 silly get cb [ 404,
+36 silly get   { 'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=0',
+36 silly get     'content-length': '2',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Mon, 10 Oct 2016 18:41:55 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '0',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-ord1741-ORD',
+36 silly get     'x-cache': 'MISS',
+36 silly get     'x-cache-hits': '0',
+36 silly get     'x-timer': 'S1476124915.625934,VS0,VE89',
+36 silly get     vary: 'Accept-Encoding' } ]
+37 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/cypto
+37 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+37 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+37 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+37 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+37 verbose stack     at emitTwo (events.js:87:13)
+37 verbose stack     at Request.emit (events.js:172:7)
+37 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+37 verbose stack     at emitOne (events.js:82:20)
+37 verbose stack     at Request.emit (events.js:169:7)
+37 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+38 verbose statusCode 404
+39 verbose pkgid cypto
+40 verbose cwd z:\HM7\MyApp
+41 error Windows_NT 10.0.14393
+42 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "cypto" "--save"
+43 error node v4.6.0
+44 error npm  v2.15.9
+45 error code E404
+46 error 404 Registry returned 404 for GET on https://registry.npmjs.org/cypto
+46 error 404
+46 error 404 'cypto' is not in the npm registry.
+46 error 404 You should bug the author to publish it (or use the name yourself!)
+46 error 404 It was specified as a dependency of 'MyApp'
+46 error 404
+46 error 404 Note that you can also install from a
+46 error 404 tarball, folder, http url, or git url.
+47 verbose exit [ 1, true ]
